@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/35a84387af.js" crossorigin="anonymous"></script>
+
+    <title>Wil & Erin</title>
+</head>
+
+<body>
+    <style>
+        main {
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            background-image: url(http://thearthurmerwes.local/wp-content/uploads/2023/07/flowers-g40e31b245_1920.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        p {
+            margin-bottom: 0;
+            color: #01653b;
+        }
+
+        .save-the-date-content {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.7);
+            padding-bottom: 20px;
+            font-family: serif;
+
+        }
+
+        .save-the-date-small {
+            font-size: 24px;
+            line-height: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .save-the-date-main {
+            font-size: 46px;
+            line-height: 1.2em;
+            margin-top: 0;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .save-the-date-medium {
+            font-size: 32px;
+            line-height: 1.2em;
+        }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <script>
+        var duration = 999 * 1000;
+        var animationEnd = Date.now() + duration;
+        var skew = 1;
+
+        function randomInRange(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+
+        (function frame() {
+            var timeLeft = animationEnd - Date.now();
+            var ticks = Math.max(200, 500 * (timeLeft / duration));
+            skew = Math.max(0.8, skew - 0.001);
+
+            confetti({
+                particleCount: 1,
+                startVelocity: 0,
+                ticks: ticks,
+                origin: {
+                    x: Math.random(),
+                    // since particles fall down, skew start toward the top
+                    y: (Math.random() * skew) - 0.2
+                },
+                colors: ['#f7d4d5'],
+                shapes: ['circle'],
+                gravity: randomInRange(0.4, 0.6),
+                scalar: randomInRange(0.4, 1),
+                drift: randomInRange(-0.4, 0.4)
+            });
+
+            if (timeLeft > 0) {
+                requestAnimationFrame(frame);
+            }
+        }());
+    </script>
+
+
+    <main id="primary" class="save-the-date-main">
+        <div class="save-the-date-content">
+            <p class="save-the-date-small" style="letter-spacing: 0.2em;">SAVE THE DATE </br>FOR THE WEDDING
+                OF
+            </p>
+            <p class="save-the-date-main">William Lestan Arthur </br>and </br>Erin Mia Van der Merwe</p>
+            <p class="save-the-date-medium">24 JUNE 2024</p>
+            <p class="save-the-date-small">THE SANCROFT BARNS, SUFFOLK</p>
+        </div>
+    </main>
+</body>
+
+</html>
