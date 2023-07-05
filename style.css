@@ -53,6 +53,11 @@ h2 {
   margin-top: 0;
 }
 
+#landing > .landing-date {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+
 #countdownTimer {
   font-size: 1.4em;
   font-family: "Quicksand", sans-serif;
@@ -77,28 +82,19 @@ h2 {
   cursor: pointer;
 }
 
+/* Section */
+
+.section {
+  padding: 0 100px;
+  margin: 100px 0;
+}
+
+.section p {
+  text-align: justify;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.2em;
+}
+
 /* Story */
 
-#story {
-  padding: 0 50px;
-  margin: 100px 0;
-}
-
-#story p {
-  text-align: justify;
-  font-family: "Quicksand", sans-serif;
-  font-size: 1.2em;
-}
-
 /* Location */
-
-#location {
-  padding: 0 50px;
-  margin: 100px 0;
-}
-
-#location p {
-  text-align: justify;
-  font-family: "Quicksand", sans-serif;
-  font-size: 1.2em;
-}
