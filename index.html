@@ -12,10 +12,28 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/35a84387af.js" crossorigin="anonymous"></script>
     <script src="countdown.js"></script>
+    <script src="mobilemenu.js"></script>
     <title>Wil & Erin</title>
 </head>
 
 <body>
+    <button id="nav-toggle-open" onclick="mobileMenu()">Menu <i class="fa-solid fa-bars" style="margin-left: 10px"></i>
+        </i></button>
+    <nav id="nav-menu">
+        <button id="nav-toggle-close" onclick="mobileMenu()">Close <i class="fa-solid fa-x"
+                style="margin-left: 10px"></i></button>
+        <ul>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+        </ul>
+        <button class="rsvp">RSVP <i class="fa-solid fa-arrow-right" style="margin-left: 10px;"></i></button>
+    </nav>
     <div id="main">
         <div id="image-container"></div>
         <div class="content-container">

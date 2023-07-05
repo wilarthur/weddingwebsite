@@ -14,8 +14,46 @@ h2 {
 
 /* Nav */
 
-nav {
+#nav-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  display: none;
+  height: 100%;
   width: 300px;
+  background: red;
+  z-index: 999;
+}
+
+#nav-menu > ul {
+  margin-top: 100px;
+  list-style: none;
+}
+
+#nav-menu > .rsvp {
+  width: 100%;
+}
+
+#nav-toggle-open {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 20px;
+  z-index: 998;
+}
+
+#nav-toggle-close {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 20px;
 }
 
 /* Page layout */
