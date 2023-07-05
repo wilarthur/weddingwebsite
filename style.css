@@ -12,6 +12,12 @@ h2 {
   font-family: "Dancing Script", cursive;
 }
 
+/* Nav */
+
+nav {
+  width: 300px;
+}
+
 /* Page layout */
 
 #main {
