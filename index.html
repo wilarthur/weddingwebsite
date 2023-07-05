@@ -19,9 +19,9 @@
 <body>
     <button id="nav-toggle-open" onclick="mobileMenu()">Menu <i class="fa-solid fa-bars" style="margin-left: 10px"></i>
         </i></button>
-    <nav id="nav-menu">
-        <button id="nav-toggle-close" onclick="mobileMenu()">Close <i class="fa-solid fa-x"
-                style="margin-left: 10px"></i></button>
+    <nav id="nav-menu" class="nav-menu hidden">
+        <button id="nav-toggle-close" class="nav-toggle-close hidden" onclick="mobileMenu()">Close <i
+                class="fa-solid fa-x" style="margin-left: 10px"></i></button>
         <ul>
             <a href="#landing">
                 <li>Home</li>
@@ -54,7 +54,7 @@
         <div id="image-container"></div>
         <div class="content-container">
             <div id="landing">
-                <p class="landing-date">Monday<br> 24 June, 2024</p>
+                <p class="landing-date">Monday<br> 24 June 2024</p>
                 <p>The Sancroft Barns, Fressingfield, Suffolk</p>
                 <span id="countdownTimer"></span>
                 <br>

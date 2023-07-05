@@ -15,16 +15,21 @@ h2 {
 
 /* Nav */
 
-#nav-menu {
+.nav-menu {
   position: fixed;
   top: 0;
   left: 0;
   padding: 20px;
-  display: none;
   height: 100%;
   width: 300px;
-  background: white;
+  background: rgba(255, 255, 255, 0.9);
   z-index: 999;
+  transition: all 0.5s;
+}
+
+.hidden {
+  left: -350px !important;
+  transition: all 0.5s;
 }
 
 #nav-menu > ul {
@@ -50,6 +55,7 @@ h2 {
 }
 
 #nav-menu > ul > a:hover {
+  background: white;
   border: 1px solid black;
   transition: 0.3s;
 }
@@ -68,9 +74,12 @@ h2 {
   border: none;
   border-radius: 20px;
   z-index: 998;
+  font-family: "Quicksand", sans-serif;
+  opacity: 0.8;
+  transition: all 0.5s;
 }
 
-#nav-toggle-close {
+.nav-toggle-close {
   position: fixed;
   top: 20px;
   left: 20px;
@@ -79,6 +88,8 @@ h2 {
   font-size: 1em;
   border: none;
   border-radius: 20px;
+  font-family: "Quicksand", sans-serif;
+  transition: all 0.5s;
 }
 
 /* Page layout */
