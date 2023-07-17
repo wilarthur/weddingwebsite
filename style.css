@@ -196,12 +196,14 @@ h2 {
   background: rgba(255, 255, 255, 0.9);
 }
 
-.rsvp-form h1 {
+.rsvp-form h2 {
   text-align: center;
+  color: #01653b;
 }
 
 .rsvp-form p {
   font-size: 1.2em;
+  font-family: "Quicksand", sans-serif;
 }
 
 input,
@@ -210,6 +212,8 @@ textarea {
   height: 50px;
   margin-top: 20px;
   font-size: 18px;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 
 textarea {
