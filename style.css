@@ -163,6 +163,7 @@ h2 {
   border: 2px solid #8a957d;
   border-radius: 10px;
   transition: 0.3s;
+  color: black;
 }
 
 .rsvp:hover {
