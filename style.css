@@ -6,6 +6,12 @@ html {
 body {
   margin: 0;
 }
+
+a,
+button {
+  -webkit-appearance: none;
+}
+
 /* Headings */
 h1 {
   font-family: "Dancing Script", cursive;
