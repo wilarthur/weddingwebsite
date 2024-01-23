@@ -117,6 +117,22 @@ h2 {
   width: 61%;
 }
 
+.image-overlay{
+display:flex;
+height: 100vh;
+background:rgba(255, 255, 255, 0.7);
+justify-content: center;
+align-items: center;
+}
+
+.image-overlay h1{    
+color: #01653b;
+font-family: 'Dancing Script', cursive;
+font-weight: unset;
+text-align: center;
+font-size: 3em;
+}
+
 .content-container {
   background: url("/assets/images/Wildflowers\ border.png");
   background-position: center;
@@ -186,6 +202,22 @@ h2 {
   font-size: 1.2em;
 }
 
+.section ul{
+    list-style-type: none;
+padding: unset;}
+
+.section ul li{
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.2em;
+  padding-left: 40px;
+  margin:20px;
+  background-image: url(/assets/images/Pink\ flower\ bulletpoint.jpg);
+  background-position: 0 5px;
+  background-size: 1em;
+  background-repeat: no-repeat;
+}
+
+
 /* Story */
 
 /* Location */
@@ -229,4 +261,37 @@ textarea {
 
 textarea {
   min-height: 300px;
+}
+
+
+/* Mobile styling */
+
+@media only screen and (max-width: 1200px) {
+  .section{
+    padding: 15px;
+  }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+#main{
+  display:flex;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+
+}
+#image-container{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+.content-container {
+    height: 100vh;
+    width: 100%;
+    margin-left: unset;
+}
+  .section{
+    padding: 50px;
+  }
 }
