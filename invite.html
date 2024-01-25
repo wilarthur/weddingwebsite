@@ -42,7 +42,6 @@
             background: rgba(255, 255, 255, 0.7);
             padding-bottom: 20px;
             font-family: serif;
-
         }
 
         .save-the-date-small {
@@ -62,10 +61,16 @@
             font-size: 32px;
             line-height: 1.2em;
         }
+
+        .rsvp {
+            font-size: 18px;
+            display: inline-block;
+        }
     </style>
 
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
+    <!-- Petals script -->
     <script>
         var duration = 999 * 1000;
         var animationEnd = Date.now() + duration;
@@ -103,16 +108,37 @@
     </script>
 
 
+
+
     <main id="primary" class="save-the-date-main">
         <div class="save-the-date-content">
-            <p class="save-the-date-small" style="letter-spacing: 0.2em;">SAVE THE DATE </br>FOR THE WEDDING
+            <p class="save-the-date-small">Dear <span id="inviteName"></span></br>
+
+            </p>
+            <p class="save-the-date-small" style="letter-spacing: 0.1em">YOU ARE INVITED TO </br> THE WEDDING
                 OF
             </p>
             <p class="save-the-date-main">William Lestan Arthur </br>and </br>Erin Mia Van der Merwe</p>
             <p class="save-the-date-medium">24 JUNE 2024</p>
             <p class="save-the-date-small">THE SANCROFT BARNS, SUFFOLK</p>
+            <a href="/"><button class="rsvp">Details of the day <i class="fa-solid fa-arrow-right"
+                        style="margin-left: 10px;"></i></button></a>
+            <a href="/rsvp"><button class="rsvp">RSVP <i class="fa-solid fa-arrow-right"
+                        style="margin-left: 10px;"></i></button></a>
         </div>
+
+
     </main>
 </body>
+<!-- Name script -->
+<script>
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const inviteNameSpan = document.getElementById('inviteName')
+    const inviteName = urlParams.get('name')
+
+    inviteNameSpan.innerText = inviteName
+
+</script>
 
 </html>
