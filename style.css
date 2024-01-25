@@ -55,14 +55,14 @@ h4 {
 }
 
 #nav-menu > ul {
-  margin-top: 100px;
+  margin-top: 50px;
   padding-left: 0;
   list-style: none;
 }
 
 #nav-menu > ul > a {
   display: block;
-  margin: 20px 0;
+  margin: 10px 0;
   padding: 15px;
   border: 1px solid transparent;
   border-radius: 10px;
