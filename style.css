@@ -341,5 +341,6 @@ textarea {
   }
   .section {
     padding: 50px;
+    margin: 0;
   }
 }
