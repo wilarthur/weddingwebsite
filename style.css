@@ -234,6 +234,19 @@ h4 {
 
 /* Location */
 
+/* On the day */
+.swatch-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.swatch {
+  width: 75px;
+  height: 75px;
+}
+
 /* Wedding Party */
 .profile-wrapper {
   display: flex;
