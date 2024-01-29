@@ -21,33 +21,58 @@
         <div class="content-container rsvp-content">
             <div class="rsvp-form">
                 <h2>RSVP</h2>
-                <form name="RSVP" method="POST" data-netlify="true">
+                <form name="Day-RSVP" method="POST" data-netlify="true">
+
                     <p>
-                        <label>Your First Name: <input type="text" name="firstname" /></label>
+                        <label>Invited guest name(s): <textarea name="names"></textarea></label>
                     </p>
-                    <p>
-                        <label>Your Last Name: <input type="text" name="lastname" /></label>
+                    <p style="display:flex; align-items: center; flex-wrap: wrap;">
+                        <span style="display: flex; align-items: center; margin-bottom:20px;"><input type="radio"
+                                id="accept" name="attendance" value="Attending">
+                              <label for="accept" style="margin-right:50px;">Accept with pleasure</label></span>
+
+                          <span style="display: flex; align-items: center;"><input type="radio" id="decline"
+                                name="attendance" value="Declined">
+                              <label for="decline">Regretfully decline</label></span>
                     </p>
+                    <p>&nbsp;</p>
+
+                    <div id="food" class="section">
+                        <h2>Food</h2>
+                        <p>For our wedding breakfast during the day, you have a choice for each course. Please let us
+                            know about
+                            your choices below.</p>
+                        <h4>Starters</h4>
+                        <ul>
+                            <li>Pea croquettes with dill potato salad <span style="font-size:0.5em;">(Ve)</span></li>
+                            <li>Tomato confit, feta cheese, warm herby salsa & crostini <span
+                                    style="font-size:0.5em;">(Ve)</span></li>
+                        </ul>
+                        <h4>Main Course</h4>
+                        <ul>
+                            <li>Homemade potato gnocchi, spicy carrot tomato sauce, potato crisps <span
+                                    style="font-size:0.5em;">(Ve)</span>
+                            </li>
+                            <li>Vegan wellington served with roasted potato, glazed carrots and kale, served with gravy
+                                <span style="font-size:0.5em;">(Ve)</span>
+                            </li>
+                        </ul>
+                        <h4>Desserts</h4>
+                        <ul>
+                            <li>Eton mess with seasonal berries, homemade meringue <span
+                                    style="font-size:0.5em;">(Ve)</span>
+                            </li>
+                            <li>Passion Fruit Posset <span style="font-size:0.5em;">(Ve)</span></li>
+                        </ul>
+                        <br>
+                    </div>
                     <p>
-                        <label>Your Partners First Name: <input type="text" name="pfirstname" /></label>
-                    </p>
-                    <p>
-                        <label>Your Partners Last Name: <input type="text" name="plastname" /></label>
-                    </p>
-                    <p>
-                        <label>Your Email Address: <input type="email" name="email" /></label>
-                    </p>
-                    <p>
-                        <label>Your Phone Number: <input type="tel" name="phone" /></label>
-                    </p>
-                    <p>
-                        <label>Your menu choices: <span style="font-size: 14px;"><br />Please choose one option from
+                        <label>Selected menu choices: <span style="font-size: 14px;"><br />Please include each name and
+                                choose one option from
                                 each course</span><textarea name="menuchoice"></textarea></label>
                     </p>
-                    <p>
-                        <label>Your partners menu choices: <span style="font-size: 14px;"><br />Please choose one option
-                                from
-                                each course</span><textarea name="pmenuchoice"></textarea></label>
+                    <p>&nbsp;</p>
+                    <p><label>Any allergies: <input type="text"></label>
                     </p>
                     <p style="text-align: center;">
                         <button class="rsvp form-submit" type="submit">Submit Form</button>

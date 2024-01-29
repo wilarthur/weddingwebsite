@@ -315,6 +315,12 @@ textarea {
   min-height: 300px;
 }
 
+input[type="radio"] {
+  width: 44px;
+  margin: 0;
+  padding: 0;
+}
+
 /* Mobile styling */
 
 @media only screen and (max-width: 1200px) {
@@ -342,5 +348,8 @@ textarea {
   .section {
     padding: 50px;
     margin: 0;
+  }
+  .rsvp-form {
+    width: 100%;
   }
 }
