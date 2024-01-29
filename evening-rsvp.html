@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/35a84387af.js" crossorigin="anonymous"></script>
+    <script src="countdown.js"></script>
+    <script src="mobilemenu.js"></script>
+    <title>Wil & Erin</title>
+</head>
+
+<body>
+    <div id="main">
+        <div class="content-container rsvp-content">
+            <div class="rsvp-form">
+                <h2>RSVP</h2>
+                <form name="Evening-RSVP" method="POST" data-netlify="true">
+
+                    <p>
+                        <label>Invited guest name(s): <textarea name="names"></textarea></label>
+                    </p>
+                    <p style="display:flex; align-items: center; flex-wrap: wrap;">
+                        <span style="display: flex; align-items: center; margin-bottom:20px;"><input type="radio"
+                                id="accept" name="attendance" value="Attending">
+                              <label for="accept" style="margin-right:50px;">Accept with pleasure</label></span>
+
+                          <span style="display: flex; align-items: center;"><input type="radio" id="decline"
+                                name="attendance" value="Declined">
+                              <label for="decline">Regretfully decline</label></span>
+                    </p>
+                    <p>&nbsp;</p>
+
+
+                    <p><label>Any food allergies: <input type="text"></label>
+                    </p>
+                    <p style="text-align: center;">
+                        <button class="rsvp form-submit" type="submit">Submit Form</button>
+                    </p>
+                </form>
+
+            </div>
+        </div>
+
+</body>
+
+</html>
