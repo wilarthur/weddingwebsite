@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/35a84387af.js" crossorigin="anonymous"></script>
+    <script src="countdown.js"></script>
+    <script src="mobilemenu.js"></script>
+    <title>Wil & Erin</title>
+</head>
+
+<body>
+    <div id="main">
+        <div class="content-container rsvp-content">
+            <div class="rsvp-form">
+                <h2>RSVP</h2>
+                <form name="RSVP" method="POST" data-netlify="true">
+                    <p>
+                        <label>Your First Name: <input type="text" name="firstname" /></label>
+                    </p>
+                    <p>
+                        <label>Your Last Name: <input type="text" name="lastname" /></label>
+                    </p>
+                    <p>
+                        <label>Your Partners First Name: <input type="text" name="pfirstname" /></label>
+                    </p>
+                    <p>
+                        <label>Your Partners Last Name: <input type="text" name="plastname" /></label>
+                    </p>
+                    <p>
+                        <label>Your Email Address: <input type="email" name="email" /></label>
+                    </p>
+                    <p>
+                        <label>Your Phone Number: <input type="tel" name="phone" /></label>
+                    </p>
+                    <p>
+                        <label>Your menu choices: <span style="font-size: 14px;"><br />Please choose one option from
+                                each course</span><textarea name="menuchoice"></textarea></label>
+                    </p>
+                    <p>
+                        <label>Your partners menu choices: <span style="font-size: 14px;"><br />Please choose one option
+                                from
+                                each course</span><textarea name="pmenuchoice"></textarea></label>
+                    </p>
+                    <p style="text-align: center;">
+                        <button class="rsvp form-submit" type="submit">Submit Form</button>
+                    </p>
+                </form>
+
+            </div>
+        </div>
+
+</body>
+
+</html>
