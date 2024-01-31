@@ -26,9 +26,6 @@
             background-repeat: no-repeat;
             background-position: center;
             display: flex;
-            align-content: center;
-            justify-content: center;
-            align-items: center;
         }
 
 
@@ -42,6 +39,7 @@
             background: rgba(255, 255, 255, 0.7);
             padding-bottom: 20px;
             font-family: serif;
+            margin: auto;
         }
 
         .save-the-date-small {
@@ -69,17 +67,12 @@
 
         @media only screen and (max-width: 768px) {
             main {
-                align-items: baseline;
+                height: 100%;
             }
 
             .save-the-date-content {
-                text-align: center;
-                background: rgba(255, 255, 255, 0.7);
-                padding-bottom: 20px;
-                font-family: serif;
+                height: 100%;
                 overflow: scroll;
-                -webkit-overflow-scrolling: touch;
-                height: 100vh;
             }
         }
     </style>
